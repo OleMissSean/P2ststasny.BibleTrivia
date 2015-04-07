@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#d58c6d3f">
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:text="Bible Trivia"
+        android:id="@+id/B_bibleButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_above="@+id/TV_bibleScoreTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/TV_bibleScoreTitle"
+        android:textSize="30sp"
+        android:layout_above="@+id/TV_displayBibleScore"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 out of 0"
+        android:id="@+id/TV_displayBibleScore"
+        android:textSize="21sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/TV_bibleScoreTitle"
+        android:layout_alignEnd="@+id/TV_bibleScoreTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Reset Score"
+        android:id="@+id/B_resetBibleScore"
+        android:layout_alignTop="@+id/B_bibleButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
